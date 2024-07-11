@@ -30,7 +30,7 @@ def calc(operations):
         elif operations == "/":
             ans = division(n1, n2)
         
-        res.config(text=f"Result: {ans}")
+        res.config(text=f"Equals to: {ans}")
     except ValueError:
         messagebox.showerror("Enter valid numbers")
 
@@ -58,7 +58,7 @@ button.grid(row=3, column=0)
 button = tk.Button(start, text="/",command=lambda: calc("/"))
 button.grid(row=3, column=1)
 
-res = tk.Label(start, text="Result: ")
+res = tk.Label(start, text="Equals to: ")
 res.grid(row=6, column=1)
 
 start.mainloop()
